@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Charts</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Bootstrap CDN -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="icon" sizes="16x16" href="image/logo.ico">
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <ul class="nav justify-content-center">
+            <img id="brand-image" src="image/logo.png" alt="perfecttime">
+            </div>
+            <li class="nav-item">
+                <a class="nav-link active" href="/">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/members">Calendar</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/charts">Graph</a>
+            </li>
+            <li>
+                <a class="nav-link right" href="/logout">Logout</a>
+            </li>
+        </ul>
+    </nav>
+    <br>
+    <div class="row">
+        <div class="col-md-10 mid">
+            <div class="chart-container-1 placeholder">
+                <H2>CYCLES</H2>
+                <canvas id="cycle-chart">
+                </canvas>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <div class="row">
+        <div class="col-md-10 mid">
+            <div class="chart-container-2 placeholder">
+                <h2>SYMPTOMS</h2>
+                <canvas id="symptoms-chart">
+                </canvas>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <div class="row">
+        <div class="col-md-10 mid">
+            <h2 class="placeholder">User Inputs</h2>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/signup.js"></script>
+</body>
+
+</html>
