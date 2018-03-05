@@ -26,12 +26,13 @@ p {
 #brand-image {
 	width: 180px;
 	height: 180px;
-	margin-top: -30px;
+	margin: -15px;
+	margin-left: 30px;
 	/*position: relative;*/
 }
 
-.navbar li{
-	margin-top: 50px;
+.navbar li {
+	padding-top: 50px;
 }
 
 /*form*/
@@ -61,14 +62,15 @@ button:hover {
 	color: #fff;
 }
 
+/*~~~~~~~~~~~~~~<<<<<TEMPORARY>>>>>>>>~~~~~~~~~~~~~~~*/
 .placeholder {
 	background-color: lightgrey;
 }
-
 .cal {
 	height: 320px;
 }
 
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 .mid {
 	margin: auto;
 }
