@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "CMMAnum_1",
+    "password": "",
     "database": "passport",
     "host": "127.0.0.1",
     "dialect": "mysql"
