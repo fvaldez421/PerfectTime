@@ -11,7 +11,8 @@ if(process.env.JASWDB_URL){
 		host: "localhost",
 		user: "root",
 		password: "",
-		database: "passport"
+		database: "passport",
+		dialect: "mysql"
 	});
 };
 
