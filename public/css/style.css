@@ -12,7 +12,6 @@ p {
 	color: black;
 }
 
-
 .navbar {
   margin: 0;
 
@@ -60,6 +59,15 @@ hr {
 button:hover {
 	background-color: #000;
 	color: #fff;
+}
+
+.placeholder {
+	background-color: lightgrey;
+}
+
+.cal {
+	width: 200px;
+	height: 400px;
 }
 
 
