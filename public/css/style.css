@@ -66,8 +66,11 @@ button:hover {
 }
 
 .cal {
-	width: 200px;
-	height: 400px;
+	height: 320px;
+}
+
+.mid {
+	margin: auto;
 }
 
 
