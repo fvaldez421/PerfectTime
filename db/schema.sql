@@ -1,1 +1,1 @@
-CREATE DATABASE passport;
+CREATE DATABASE users_db;
