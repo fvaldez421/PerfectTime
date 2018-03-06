@@ -4,7 +4,14 @@
 <head>
     <title>Charts</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/css/bootstrap-select.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/js/bootstrap-select.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+       <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Bootstrap CDN -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -54,15 +61,145 @@
         </div>
     </div>
     <br>
-
+    <!-- New User Input -->
     <div class="row">
         <div class="col-md-10 mid">
             <h2 class="placeholder">User Inputs</h2>
+            <div class="container">
+        <div class="page-header">
+            <h1> New User Input</h1>
         </div>
-    </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title"><strong>Questionnaire</strong></h3>
+            </div>
+            <div class="panel-body">
+                <h4><strong> When did you have your last period?</strong></h4>
+                <input id="date" type="date">
+                <h4><strong> How long are your cycles?</strong></h4>
+                <select data-placeholder="" class="chosen-select" id="Q1">
+                    <option value=""></option>
+                    <option value="14">14 days</option>
+                    <option value="15">15 days</option>
+                    <option value="16">16 days</option>
+                    <option value="17">17 days</option>
+                    <option value="18">18 days</option>
+                    <option value="19">19 days</option>
+                    <option value="20">20 days</option>
+                    <option value="21">21 days</option>
+                    <option value="22">22 days</option>
+                    <option value="23">23 days</option>
+                    <option value="24">24 days</option>
+                    <option value="25">25 days</option>
+                    <option value="26">26 days</option>
+                    <option value="27">27 days</option>
+                    <option value="28">28 days (Average Cycle)</option>
+                    <option value="29">29 days</option>
+                    <option value="30">30 days</option>
+                    <option value="31">32 days</option>
+                    <option value="33">33 days</option>
+                    <option value="34">34 days</option>
+                    <option value="35">35 days</option>
+                    <option value="36">36 days</option>
+                    <option value="37">37 days</option>
+                    <option value="38">38 days</option>
+                    <option value="39">39 days</option>
+                    <option value="40">40 days</option>
+                   </select>
+                 <h4><strong> Are you trying to conceive?</strong></h4>
+                <select data-placeholder="" class="chosen-select" id="Q1">
+                    <option value="1">yes</option>
+                    <option value="2">no</option>
+                </select>
+            </div>
+        </div>
+     <!--  Submit Button -->
+        <button id="submitButton" type="submit" class="btn btn-primary">
+            <h4>Submit</h4></button>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/signup.js"></script>
+            <!-- Daily Input -->
+            <div class="container">
+        <div class="page-header">
+            <h1> Daily Input</h1>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title"><strong>Questionnaire</strong></h3>
+            </div>
+            <div class="panel-body">
+            <div id="page">
+                <h4><strong>Today's Date<strong></h4>
+                <div id="clock" class="clock"></div>
+                <br>
+                <h4><strong>Basal Body Temperature(BBT) in degrees Fahrenheit.</strong></h4>
+                <input type="text" name="temp" placeholder="98" id="Q1">
+                <h4><strong>Mood</strong></h4>
+                <select data-placeholder="" class="chosen-select" id="Q2">
+               <!--      <option value=""></option> -->
+                    <option value="1">1 (Sad)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10 (Happy)</option>
+                </select>
+                <h4><strong>Energy Level</strong></h4>
+                <select data-placeholder="" class="chosen-select" id="Q3">
+                    <option value="1">1 (Low)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10 (High)</option>
+                </select>
+                <h4><strong>Symptoms</strong></h4>
+                <select class="selectpicker" data-style="btn-primary" multiple data-max-options="4">
+                    <option>Light Spotting</option>
+                    <option>Cramping</option>
+                    <option>Breast Tenderness</option>
+                    <option>No Appetite</option>
+                </select>
+                <br>
+                <br>
+                <h4><strong>Cervical Mucus</strong></h4>
+                <select data-placeholder="" class="chosen-select" id="Q4">
+                    <option value="1">Dry Phase</option>
+                    <option value="2">Sticky Phase</option>
+                    <option value="3">Creamy Phase</option>
+                    <option value="4">Clear Phase</option>
+                </select>
+                <br>
+                <h4><strong>Intercourse</strong></h4>
+                <select data-placeholder="" class="chosen-select" id="Q5">
+                    <option value="1">Protected</option>
+                    <option value="2">Unprotected</option>
+                </select>
+                <br>
+                   <h4><strong>Conception Method</strong></h4>
+                <select data-placeholder="" class="chosen-select" id="Q6">
+                    <option value="1">Intrauterine Insemination (IUI)</option>
+                    <option value="2">Intravaginal Insemination (IVI)</option>
+                    <option value="3"> In vitro fertilisation (IVF)</option>
+                </select>
+                <br>
+                <h4><strong>Medications</strong></h4>
+                <input type="text" name="medication" id="Q7" placeholder="List them here">
+    </div>
+</div>
+</div>
+        <!--  Submit Button -->
+        <button id="submitButton" type="submit" class="btn btn-primary">
+            <h4>Submit</h4></button>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+   <script type="text/javascript" src="js/charts.js"></script>
 </body>
 
 </html>
