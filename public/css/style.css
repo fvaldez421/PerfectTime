@@ -75,4 +75,6 @@ button:hover {
 	margin: auto;
 }
 
-
+.indent {
+	margin-left: 30px;
+}
