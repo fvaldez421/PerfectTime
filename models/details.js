@@ -2,7 +2,7 @@
 module.exports = function(sequelize, DataTypes) {
 	var Detail = sequelize.define("Detail", {
 		bbt: {
-			type: DataTypes.DECIMAL(3,4),
+			type: DataTypes.DECIMAL(6,3),
 			allowNull: false
 		},
 		mood1: {
@@ -18,7 +18,7 @@ module.exports = function(sequelize, DataTypes) {
 			allowNull: false
 		},
 		energy: {
-			type: DataTypes.STRING,
+			type: DataTypes.INTEGER,
 			allowNull: false
 		},
 		meds: {
@@ -60,15 +60,9 @@ module.exports = function(sequelize, DataTypes) {
 		menstart: {
 			type: DataTypes.STRING,
 			allowNull: false
-		},
-		hunger: {
-			type: DataTypes.STRING,
-			allowNull: false
-		},
-		events: {
-			type: DataTypes.STRING,
-			allowNull: true
 		}
+	}, {
+		timestamps: false
 	});
 
 	Detail.associate = function(models) {
@@ -80,4 +74,4 @@ module.exports = function(sequelize, DataTypes) {
 	};
 
 	return Detail;
-}
+};
