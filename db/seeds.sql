@@ -10,10 +10,10 @@ VALUES
 (97.55, 6, 5, 4, 7, "Tylenol", "Iron", "normal", "blue(LOLOL)", "low", "high", "morning", "low", "no", "2/20", 1);
 
 
-INSERT INTO events (title, dates, time, invitees, details, MemberId)
+INSERT INTO events (title, startDate, endDate, invitees, details, MemberId)
 VALUES 
-("Gyno Appt", "3/8/18", "2:00pm", "Kim, Daniel", "I might be pregnant, lets find out...", 1),
-("Fert Alert", "3/10/18, 3/11/18, 3/12/18, 3/13/18", "na", "husband", "Increased chances of conception!", 1);
+("Gyno Appt", "3/8/18", "3/9/18", "Kim, Daniel", "I might be pregnant, lets find out...", 1),
+("Fert Alert", "3/10/18", "3/13/18", "na", "husband", "Increased chances of conception!", 1);
 
 
 

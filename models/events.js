@@ -5,11 +5,11 @@ module.exports = function (sequelize, DataTypes) {
 			type: DataTypes.STRING,
 			allowNull: false
 		},
-		dates: {
+		startDate: {
 			type: DataTypes.STRING,
 			allowNull: false
 		},
-		time: {
+		endDate: {
 			type: DataTypes.STRING,
 			allowNull: false
 		},
