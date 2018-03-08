@@ -97,13 +97,14 @@ var chartData = {
 		],
 		datasets: [{
 			type: "line",
-			label: "Basal Body Temp",
-			borderColor: "rgb(24, 90, 104)",
-            backgroundColor: "rgb(24, 90, 104)",
+			label: "Spotting",
+			borderColor: "rgb(255, 49, 84)",
+            backgroundColor: "rgb(255, 49, 84)",
             fill: false,
             radius: 5,
+            pointStyle: "star",
+            display: false,
             hoverRadius: 6,
-            yAxisID: "temp-left-y",
             data: [98.18, 97.79, 98.2, 98.34, 97.43, 97.66, 97.39, 
             	   97.22, 97.69, 97.66, 97.76, 97.67, 97.79,97.64,
             	   97.79, 98.18, 98.47, 98.61, 98.59, 98.7, 98.60,
@@ -144,31 +145,6 @@ var chartData = {
 						min: 96.5,
 						max: 99.5,
 						autoSkip: false
-					}
-				}, {
-					id: "happy-right-y",
-					type: "linear",
-					position: "right",
-					ticks: {
-						beginAtZero: true,
-						min: 0,
-						max: 10
-					},
-					gridLines: {
-						display: false
-					}
-				}, {
-					id: "energy-right-y",
-					type: "linear",
-					position: "right",
-					ticks: {
-						display: false,
-						beginAtZero: true,
-						min: 0,
-						max: 10
-					},
-					gridLines: {
-						display: false
 					}
 				}]
 			}
