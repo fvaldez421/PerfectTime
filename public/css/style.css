@@ -4,13 +4,25 @@
 	height: 450px;
 }
 
-.jumbotron h1 {
+
+.jumbotron2 {
+	background: url("https://s-i.huffpost.com/gen/1905860/images/o-HAPPY-WOMAN-facebook.jpg") no-repeat;
+	background-size: cover;
+	height: 400px;
+}
+
+.jumbotron, .jumbotron2 h1 {
+	color: #ffffff;
+}
+
+.jumbotron2 p {
 	color: #ffffff;
 }
 
 p {
 	color: black;
 }
+
 
 .navbar {
   margin: 0;
@@ -83,4 +95,26 @@ button:hover {
 /*Chart*/
 body {
 	font-size: 16px;
+}
+
+
+/*About*/
+
+/* Profile picture properties */
+.image-holder img {
+  border-radius: 50%;
+  display: inline;
+  width: 200px;
+  height: 200px;
+}
+
+/* Modifies name properties */
+.team-name {
+  font-size: 18px;
+  margin: 12px 0;
+}
+
+.footer-copyright {
+	color: #ffffff;
+	background-color: #ff6666;
 }
