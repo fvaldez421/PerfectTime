@@ -1,7 +1,7 @@
 .jumbotron {
 	background: url("http://www.ob-tampons.com/Sitefinity/WebsiteTemplates/ob/App_Themes/ob/images/pt/period_calculator_banner_2.png") no-repeat;
 	background-size:  cover;
-	height: 450px;
+	height: 400px;
 }
 
 
@@ -43,7 +43,7 @@ p {
 	/*position: relative;*/
 }
 
-.navbar li {
+.nav li {
 	padding-top: 50px;
 }
 
@@ -74,15 +74,18 @@ button:hover {
 	color: #fff;
 }
 
-/*~~~~~~~~~~~~~~<<<<<TEMPORARY>>>>>>>>~~~~~~~~~~~~~~~*/
+/*Charts Inputs*/
+#cycle-length {
+	padding-top: 15px;
+	} 
+
 .placeholder {
-	background-color: lightgrey;
+	background-color: white;
 }
 .cal {
 	height: 320px;
 }
 
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 .mid {
 	margin: auto;
 }
@@ -91,7 +94,45 @@ button:hover {
 	margin-left: 30px;
 }
 
+.date-input {
+	font-weight: normal;
+}
 
+.chosen-select	{
+	font-weight: normal;
+}
+
+#temp-heading 	{
+	padding-top: 10px;
+}
+
+#mood-heading	{
+	padding-top: 15px;
+}
+
+#energy-heading	{
+	padding-top: 10px;
+}
+
+#symptoms-heading	{
+	padding-top: 20px;
+}
+
+#intercourse-heading	{
+	padding-top: 10px;
+}
+
+#conception-heading 	{
+	padding-top: 10px;
+}
+
+#medications-heading	{
+	padding-top: 20px;
+}
+
+#supplements-heading 	{
+	padding-top: 10px;
+}
 /*Chart*/
 body {
 	font-size: 16px;
@@ -115,6 +156,17 @@ body {
 }
 
 .footer-copyright {
-	color: #ffffff;
+/*	color: #ffffff;
 	background-color: #ff6666;
+	height:100px;
+
+}*/
+
+    /*position:fxed;*/
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #ff6666;
+    color: white;
+    text-align: center;
 }
