@@ -162,9 +162,9 @@ body {
 
 }*/
 
-    /*position:fxed;*/
+    
     left: 0;
-    bottom: 0;
+    bottom: 0px;
     width: 100%;
     background-color: #ff6666;
     color: white;
