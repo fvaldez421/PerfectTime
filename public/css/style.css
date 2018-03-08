@@ -1,7 +1,7 @@
 .jumbotron {
 	background: url("http://www.ob-tampons.com/Sitefinity/WebsiteTemplates/ob/App_Themes/ob/images/pt/period_calculator_banner_2.png") no-repeat;
 	background-size:  cover;
-	height: 450px;
+	height: 400px;
 }
 
 
@@ -43,7 +43,7 @@ p {
 	/*position: relative;*/
 }
 
-.navbar li {
+.nav li {
 	padding-top: 50px;
 }
 
@@ -115,6 +115,17 @@ body {
 }
 
 .footer-copyright {
-	color: #ffffff;
+/*	color: #ffffff;
 	background-color: #ff6666;
+	height:100px;
+
+}*/
+
+    /*position:fxed;*/
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #ff6666;
+    color: white;
+    text-align: center;
 }

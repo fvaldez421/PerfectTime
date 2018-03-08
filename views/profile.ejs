@@ -19,18 +19,18 @@
     <link rel="icon" sizes="16x16" href="images/logo.ico">
 </head>
 <body>
-	<nav class="navbar navbar-default">
+	<nav class="nav">
         <ul class="nav justify-content-center">
-            <img id="brand-image" src="images/logo.png" alt="perfecttime">
+            <a href="login.html"><img src="images/logo.png" alt="perfecttime" id="brand-image"></a>
             </div>
             <li class="nav-item">
-                <a class="nav-link active" href="/">About</a>
+                <a class="nav-link active" href="about.html">About</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/members">Calendar</a>
+                <a class="nav-link" href="/members.html">Calendar</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/charts">Charts</a>
+                <a class="nav-link" href="/charts.html">Charts</a>
             </li>
             <li>
                 <a class="nav-link right" href="/auth/logout">Logout</a>
@@ -42,12 +42,12 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
-            	<h1>Welcome to Perfect Time <%= user.name %></h1> 
-            	<h2>Thank you for joining our community!</h2>
+            	<h1><center>Welcome to Perfect Time <%= user.name %></center></h1> 
+            	<h2><center>Thank you for joining our community!</center></h2>
             </div>
         </div>
     </div>
-
+    <br>
     <div class="panel panel-default">
             <div class="panel-heading">
                 <h3 class="panel-title"><strong>Questionnaire</strong></h3>
@@ -60,22 +60,13 @@
                 <input type="text" name="temp" placeholder="" id="memQ2">
 
                 <h4><strong>Height in Inches:</strong></h4>
-                <input type="text" name="temp" placeholder="70" id="memQ3">
+                <input type="text" name="temp" placeholder="65" id="memQ3">
 
                 <h4><strong>Weight in lbs:</strong></h4>
-                <input type="text" name="temp" placeholder="190" id="memQ4">
+                <input type="text" name="temp" placeholder="120" id="memQ4">
 
                 <h4><strong>Gender:</strong></h4>
                 <input type="text" name="temp" placeholder="female" id="memQ5">
-
-                <h4><strong>ACL:</strong></h4>
-                <input type="text" name="temp" placeholder="70" id="memQ6">
-
-                <h4><strong> Are you sexually active?</strong></h4>
-                <select data-placeholder="" class="chosen-select" id="memQ7">
-                    <option value="1">yes</option>
-                    <option value="2">no</option>
-                </select>
 
                 <h4><strong> Are you trying to conceive?</strong></h4>
                 <select data-placeholder="" class="chosen-select" id="memQ8">
