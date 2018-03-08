@@ -1,12 +1,96 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>home</title>
+<title>Profile</title>
+    <meta charset="UTF-8">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/css/bootstrap-select.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/js/bootstrap-select.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+       <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Bootstrap CDN -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="icon" sizes="16x16" href="images/logo.ico">
 </head>
 <body>
-<h1>WE MADE IT</h1>
+	<nav class="navbar navbar-default">
+        <ul class="nav justify-content-center">
+            <img id="brand-image" src="images/logo.png" alt="perfecttime">
+            </div>
+            <li class="nav-item">
+                <a class="nav-link active" href="/">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/members">Calendar</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/charts">Charts</a>
+            </li>
+            <li>
+                <a class="nav-link right" href="/auth/logout">Logout</a>
+            </li>
+        </ul>
+    </nav>
+    <br>
 
-<h2>Welcome, <%= user.name %></h2>
-<a href="/auth/logout"><button id="logout" href="/auth/logout">LOGOUT?</button></a>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+            	<h1>Welcome to Perfect Time <%= user.name %></h1> 
+            	<h2>Thank you for joining our community!</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title"><strong>Questionnaire</strong></h3>
+            </div>
+            <div class="panel-body">
+            	<h4><strong>Name:</strong></h4>
+                <input type="text" name="temp" placeholder="John/Jane" id="memQ1">
+
+                <h4><strong>Age:</strong></h4>
+                <input type="text" name="temp" placeholder="" id="memQ2">
+
+                <h4><strong>Height in Inches:</strong></h4>
+                <input type="text" name="temp" placeholder="70" id="memQ3">
+
+                <h4><strong>Weight in lbs:</strong></h4>
+                <input type="text" name="temp" placeholder="190" id="memQ4">
+
+                <h4><strong>Gender:</strong></h4>
+                <input type="text" name="temp" placeholder="female" id="memQ5">
+
+                <h4><strong>ACL:</strong></h4>
+                <input type="text" name="temp" placeholder="70" id="memQ6">
+
+                <h4><strong> Are you sexually active?</strong></h4>
+                <select data-placeholder="" class="chosen-select" id="memQ7">
+                    <option value="1">yes</option>
+                    <option value="2">no</option>
+                </select>
+
+                <h4><strong> Are you trying to conceive?</strong></h4>
+                <select data-placeholder="" class="chosen-select" id="memQ8">
+                    <option value="1">yes</option>
+                    <option value="2">no</option>
+                </select>
+
+                
+            </div>
+        </div>
+ <button id="submitButton" type="submit" class="btn btn-primary">
+            <h4>Submit</h4></button>
+
+
+
+<!-- <a href="/auth/logout"><button id="logout" href="/auth/logout">LOGOUT?</button></a> -->
 </body>
 </html>
