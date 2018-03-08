@@ -1,6 +1,6 @@
 USE users_db;
 
-INSERT INTO members (name, age, height, weight, gender, acl, sexact, conception)
+INSERT INTO members (name, age, height, weight, gender, conception)
 VALUES 
 ("Jaimie", 32, "5'2", 128, "female", 29, "no", "natural");
 
