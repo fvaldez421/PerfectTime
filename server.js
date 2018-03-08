@@ -1,5 +1,6 @@
 
 // Requiring necessary npm packages
+var $ = require("jquery");
 var express = require("express");
 var authRoutes = require('./routes/auth-routes');
 var profileRoutes = require('./routes/profile-routes');
@@ -37,7 +38,8 @@ app.use(passport.session());
 
 // Requiring our routes
 require("./routes/html-routes.js")(app);
-// require("./routes/auth-routes.js")(app);
+require("./routes/api-routes.js")(app);
+
 app.use('/auth', authRoutes);
 
 app.use("/profile", profileRoutes);
