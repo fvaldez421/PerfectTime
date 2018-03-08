@@ -29,10 +29,12 @@ module.exports = function (sequelize, DataTypes) {
 			type: DataTypes.STRING,
 			allowNull: false
 		},
-		contype: {
+		conception: {
 			type: DataTypes.STRING,
 			allowNull: false
 		}
+	}, {
+		timestamps: false
 	});
 	Member.associate = function(models) {
 		Member.hasMany(models.Detail, {
@@ -41,4 +43,4 @@ module.exports = function (sequelize, DataTypes) {
 	};
 
 	return Member;
-}
+};
