@@ -6,7 +6,7 @@ module.exports = function (sequelize, DataTypes) {
 			allowNull: false
 		},
 		age: {
-			type: DataTypes.INTEGER,
+			type: DataTypes.STRING,
 			allowNull: false
 		},
 		height: {
@@ -14,18 +14,10 @@ module.exports = function (sequelize, DataTypes) {
 			allowNull: false
 		},
 		weight: {
-			type: DataTypes.INTEGER,
-			allowNull: false
-		},
-		gender: {
 			type: DataTypes.STRING,
 			allowNull: false
 		},
-		acl: {
-			type: DataTypes.INTEGER,
-			allowNull: false
-		},
-		sexact: {
+		gender: {
 			type: DataTypes.STRING,
 			allowNull: false
 		},
