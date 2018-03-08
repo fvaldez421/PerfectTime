@@ -12,13 +12,16 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cookie-session": "^2.0.0-beta.3",
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.18.2",
+    "ejs": "^2.5.7",
     "express": "^4.16.2",
     "express-session": "^1.15.6",
+    "mysql": "^2.15.0",
     "mysql2": "^1.5.2",
-    "passport": "^0.3.2",
-    "passport-local": "^1.0.0",
+    "passport": "^0.4.0",
+    "passport-google-oauth20": "^1.0.0",
     "sequelize": "^4.35.1"
   }
 }
