@@ -13,8 +13,8 @@ var chartData = {
 		datasets: [{
 			type: "line",
 			label: "Basal Body Temp",
-			borderColor: "rgb(245, 255, 0)",
-            backgroundColor: "rgb(245, 255, 0)",
+			borderColor: "rgb(24, 90, 104)",
+            backgroundColor: "rgb(24, 90, 104)",
             fill: false,
             radius: 5,
             hoverRadius: 6,
@@ -26,8 +26,8 @@ var chartData = {
 		}, {
 			type: "line",
 			label: "Happiness",
-			borderColor: "rgb(101, 237, 237)",
-            backgroundColor: "rgb(101, 237, 237)",
+			borderColor: "rgb(182, 166, 232)",
+            backgroundColor: "rgb(182, 166, 232)",
             borderDash: ([5,15]),
             fill: false,
             yAxisID: "happy-right-y",
@@ -35,8 +35,8 @@ var chartData = {
 		}, {
 			type: "line",
 			label: "Energy",
-			borderColor: "rgb(255, 161, 0)",
-			backgroundColor: "rgb(255, 161, 0)",
+			borderColor: "rgb(50, 159, 210)",
+			backgroundColor: "rgb(50, 159, 210)",
             borderDash: ([3,6]),
             fill: false,
             yAxisID: "energy-right-y",
