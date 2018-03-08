@@ -1,19 +1,16 @@
 
 module.exports = function(sequelize, DataTypes) {
-	var Detail = sequelize.define("Detail", {
+	var Daily = sequelize.define("Daily", {
+		date: {
+			type: DataTypes.STRING,
+			allowNull: false
+
+		},
 		bbt: {
 			type: DataTypes.DECIMAL(6,3),
 			allowNull: false
 		},
-		mood1: {
-			type: DataTypes.INTEGER,
-			allowNull: false
-		},
-		mood2: {
-			type: DataTypes.INTEGER,
-			allowNull: false
-		},
-		mood3: {
+		mood: {
 			type: DataTypes.INTEGER,
 			allowNull: false
 		},
@@ -21,15 +18,7 @@ module.exports = function(sequelize, DataTypes) {
 			type: DataTypes.INTEGER,
 			allowNull: false
 		},
-		meds: {
-			type: DataTypes.STRING,
-			allowNull: false
-		},
-		vits: {
-			type: DataTypes.STRING,
-			allowNull: false
-		},
-		flow: {
+		symptoms: {
 			type: DataTypes.STRING,
 			allowNull: false
 		},
@@ -37,27 +26,19 @@ module.exports = function(sequelize, DataTypes) {
 			type: DataTypes.STRING,
 			allowNull: false
 		},
-		discharge: {
+		intercourse: {
 			type: DataTypes.STRING,
 			allowNull: false
 		},
-		appetite: {
+		conceptMeth: {
 			type: DataTypes.STRING,
 			allowNull: false
 		},
-		nausea: {
+		meds: {
 			type: DataTypes.STRING,
 			allowNull: false
 		},
-		tender: {
-			type: DataTypes.STRING,
-			allowNull: false
-		},
-		cramping: {
-			type: DataTypes.STRING,
-			allowNull: false
-		},
-		menstart: {
+		supplements: {
 			type: DataTypes.STRING,
 			allowNull: false
 		}
@@ -65,13 +46,13 @@ module.exports = function(sequelize, DataTypes) {
 		timestamps: false
 	});
 
-	Detail.associate = function(models) {
-		Detail.belongsTo(models.Member, {
+	Daily.associate = function(models) {
+		Daily.belongsTo(models.Member, {
 			foreignKey: {
 				allowNull: false
 			}
 		});
 	};
 
-	return Detail;
+	return Daily;
 };

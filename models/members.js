@@ -29,7 +29,7 @@ module.exports = function (sequelize, DataTypes) {
 		timestamps: false
 	});
 	Member.associate = function(models) {
-		Member.hasMany(models.Detail, {
+		Member.hasMany(models.Daily, {
 			onDelete: "cascade"
 		});
 	};

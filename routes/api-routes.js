@@ -18,4 +18,25 @@ app.post("/api/profile", function(req, res) {
 	})
 });
 
+
+
+
+app.post("/api/daily", function(req, res) {
+	console.log(req.body);
+	db.Daily.create({
+		date: req.body.date,
+		bbt: req.body.bbt,
+		mood: req.body.mood,
+		energy: req.body.energy,
+		symptoms: req.body.symptoms,
+		cervMuc: req.body.cervMuc,
+		intercourse: req.body.intercourse,
+		conceptMeth: req.body.conceptMeth,
+		meds: req.body.meds,
+		supplements: req.body.supplements
+	}).then(function(result) {
+		res.redirect(path.join(__dirname, "/charts"));
+	})
+});
+
 }

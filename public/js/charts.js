@@ -175,3 +175,46 @@ var chartData = {
 		}
 
 	});
+
+
+
+
+$(document).ready(function() {
+	console.log("im connected")
+
+	var date = $("#date-input").val().trim();
+	var bbt = $("#Q1").val().trim();
+	var mood = $("#Q2").val().trim();
+	var energy = $("#Q3").val().trim();
+	var symptoms = $("#Q4").val();
+	var cervMuc = $("#Q5").val().trim();
+	var intercourse = $("#Q6").val().trim();
+	var conceptMeth = $("#Q7").val().trim();
+	var meds = $("#Q8").val().trim();
+	var supplements = $("#Q9").val().trim();
+
+	var info = {
+	    date: date,
+	   	bbt: bbt,
+	    mood: mood,
+	   	energy: energy,
+	    symptoms: symptoms,
+	    cervMuc: cervMuc,
+	    intercourse: intercourse,
+	   	conceptMeth: conceptMeth,
+	    meds: meds,
+	    supplements: supplements
+	};
+	console.log("Im loaded");
+
+	$("#submitButton2").on("click", function(event) {
+		event.preventDefault();
+		console.log("im submitting");
+		console.log(conceptMeth)
+		// debugger;
+		$.post("/api/daily", info).done(function(data){
+			console.log("shut up!")
+		});
+	});
+	
+})
