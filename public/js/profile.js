@@ -7,7 +7,7 @@ $(document).ready(function() {
 	var height = $("#q3").val().trim();
 	var weight = $("#q4").val().trim();
 	var gender = $("#q5").val().trim();
-	var conceive = $("#q8").val().trim();
+	var conceive = $("#q6").val().trim();
 
 	var info = {
 	    name: nickName,
@@ -15,7 +15,7 @@ $(document).ready(function() {
 	    height: height,
 	   	weight: weight,
 	    gender: gender,
-	    conceive: conceive
+	    conception: conceive
 	};
 	console.log("Im loaded");
 
