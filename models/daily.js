@@ -7,7 +7,7 @@ module.exports = function(sequelize, DataTypes) {
 
 		},
 		bbt: {
-			type: DataTypes.DECIMAL(6,3),
+			type: DataTypes.DECIMAL(5,2),
 			allowNull: true
 		},
 		mood: {
@@ -46,13 +46,13 @@ module.exports = function(sequelize, DataTypes) {
 		timestamps: false
 	});
 
-	Daily.associate = function(models) {
-		Daily.belongsTo(models.User, {
-			foreignKey: {
-				allowNull: false
-			}
-		});
-	};
+	// Daily.associate = function(models) {
+	// 	Daily.belongsTo(models.User, {
+	// 		foreignKey: {
+	// 			allowNull: false
+	// 		}
+	// 	});
+	// };
 
 	return Daily;
 };
