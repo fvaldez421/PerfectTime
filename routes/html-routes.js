@@ -46,7 +46,7 @@ module.exports = function(app) {
     if (req.user) {
       res.render("about");
     }
-    res.render("login");
+    res.render("about");
   });
 
 };
