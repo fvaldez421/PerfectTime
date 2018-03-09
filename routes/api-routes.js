@@ -22,9 +22,9 @@ app.put("/api/profile", function(req, res) {
 		where: {
 			googleId: req.body.googleId
 		}
-	}).then(function(result) {
-		res.redirect(path.join(__dirname, "/members"));
 	})
+	res.redirect(path.join(__dirname, "/members"));
+
 });
 
 
