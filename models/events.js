@@ -26,7 +26,7 @@ module.exports = function (sequelize, DataTypes) {
 	});
 
 	Event.associate = function(models) {
-		Event.belongsTo(models.Member, {
+		Event.belongsTo(models.User, {
 			foreignKey: {
 				allowNull: false
 			}
