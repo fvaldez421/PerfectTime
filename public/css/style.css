@@ -38,9 +38,14 @@ p {
 #brand-image {
 	width: 180px;
 	height: 180px;
-	margin: -15px;
-	margin-left: 30px;
+	margin: 0px;
+	margin-left: 20px;
 	/*position: relative;*/
+}
+
+.nav-item {
+	margin-top: 26px;
+	margin-left: 4px;
 }
 
 .nav li {
