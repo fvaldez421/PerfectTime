@@ -15,13 +15,13 @@ module.exports = function(sequelize, DataTypes) {
 		timestamps: false
 	});
 
-	General.associate = function(models) {
-		General.belongsTo(models.User, {
-			foreignKey: {
-				allowNull: false
-			}
-		});
-	};
+	// General.associate = function(models) {
+	// 	General.belongsTo(models.User, {
+	// 		foreignKey: {
+	// 			allowNull: false
+	// 		}
+	// 	});
+	// };
 
 	return General;
 };

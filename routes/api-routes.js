@@ -46,4 +46,14 @@ app.post("/api/daily", function(req, res) {
 	})
 });
 
+app.post("/api/general", function(req, res) {
+	console.log(req.body);
+	db.General.create({
+		fdLastPeriod: req.body.fdLastPeriod,
+		cycleLength: req.body.cycleLength
+	}).then(function(result) {
+		res.redirect(path.join(__dirname, "/charts"));
+	})
+});
+
 }

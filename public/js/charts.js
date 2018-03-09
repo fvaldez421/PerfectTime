@@ -97,6 +97,25 @@ var chartData = {
 
 $(document).ready(function() {
 
+	$("#submitButton").on("click", function(event) {
+		event.preventDefault();
+
+		var fdLastPeriod = $("#date").val().trim();
+		var cycleLength = $("#A1").val().trim();
+
+		var data = {
+		    fdLastPeriod: fdLastPeriod,
+		    cycleLength: cycleLength
+		};
+		console.log(data)
+
+		$.post("/api/general", data).done(function(data){
+		});
+	});
+
+
+
+
 	$("#submitButton2").on("click", function(event) {
 		event.preventDefault();
 
