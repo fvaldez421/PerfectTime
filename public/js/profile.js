@@ -7,7 +7,7 @@ $(document).ready(function() {
 
 		sessionStorage.googleId = $("#googleId").html();
 
-		var googleId = $("#googleId").html()
+		var googleId = $("#googleId").html();
 		var name = $("#q1").val().trim();
 		var age = $("#q2").val().trim();
 		var height = $("#q3").val().trim();
