@@ -16,7 +16,7 @@ module.exports = function(sequelize, DataTypes) {
 	});
 
 	General.associate = function(models) {
-		General.belongsTo(models.Member, {
+		General.belongsTo(models.User, {
 			foreignKey: {
 				allowNull: false
 			}

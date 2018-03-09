@@ -47,7 +47,7 @@ module.exports = function(sequelize, DataTypes) {
 	});
 
 	Daily.associate = function(models) {
-		Daily.belongsTo(models.Member, {
+		Daily.belongsTo(models.User, {
 			foreignKey: {
 				allowNull: false
 			}

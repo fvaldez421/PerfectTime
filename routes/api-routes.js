@@ -2,23 +2,30 @@
 // var app = express();
 var db = require("../models");
 var path = require("path");
+// var google = require("./profile-routes");
 
 module.exports = function(app) {
-app.post("/api/profile", function(req, res) {
-	console.log(req.body);
-	db.Member.create({
-		name: req.body.name,
+
+app.put("/api/profile", function(req, res) {
+	// console.log("should be an object: " + req.body);
+	console.log("should be the id: " + req.body.googleId);
+	console.log("should be my name: " + req.body.nickName)
+	// console.log("this should be a name: " + google.user.name);
+	db.User.update({
+		nickName: req.body.nickName,
 		age: req.body.age,
 		height: req.body.height,
 		weight: req.body.weight,
 		gender: req.body.gender,
 		conception: req.body.conception
+	}, {
+		where: {
+			googleId: req.body.googleId
+		}
 	}).then(function(result) {
 		res.redirect(path.join(__dirname, "/members"));
 	})
 });
-
-
 
 
 app.post("/api/daily", function(req, res) {

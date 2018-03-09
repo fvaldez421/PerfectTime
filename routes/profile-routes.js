@@ -6,10 +6,10 @@ var authCheck = function(req, res, next) {
 	} else {
 		next();
 	}
-}
+};
 
 router.get("/", function(req, res) {
 	res.render("profile", {user: req.user});
-})
+});
 
 module.exports = router;
