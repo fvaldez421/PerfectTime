@@ -7,7 +7,7 @@ module.exports = function(sequelize, DataTypes) {
 
 		},
 		bbt: {
-			type: DataTypes.DECIMAL(5,2),
+			type: DataTypes.STRING,
 			allowNull: true
 		},
 		mood: {
