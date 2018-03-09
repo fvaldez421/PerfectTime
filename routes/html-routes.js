@@ -19,16 +19,16 @@ module.exports = function(app) {
     if (req.user) {
       res.redirect("/members");
     }
-    res.render("signup");
+    res.render("/members");
   });
 
   app.get("/charts", function(req, res) {
     res.render("charts");
   });
 
-  app.get("/signup", function(req, res) {
-    res.render("signup");
-  });
+  // app.get("/signup", function(req, res) {
+  //   res.render("signup");
+  // });
 
   // Here we've add our isAuthenticated middleware to this route.
   // If a user who is not logged in tries to access this route they will be redirected to the signup page
