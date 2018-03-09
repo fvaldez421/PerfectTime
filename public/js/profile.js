@@ -5,6 +5,8 @@ $(document).ready(function() {
 	$("#submitButton").on("click", function(event) {
 		event.preventDefault();
 
+		sessionStorage.googleId = $("#googleId").html();
+
 		var googleId = $("#googleId").html()
 		var name = $("#q1").val().trim();
 		var age = $("#q2").val().trim();
@@ -29,6 +31,7 @@ $(document).ready(function() {
 			data: info
 		}).done(function(data){
 		});
+	window.location.href = "/members";
 	});
 	
 })
