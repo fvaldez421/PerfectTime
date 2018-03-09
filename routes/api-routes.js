@@ -30,6 +30,7 @@ app.put("/api/profile", function(req, res) {
 
 app.post("/api/daily", function(req, res) {
 	console.log(req.body);
+	
 	db.Daily.create({
 		date: req.body.date,
 		bbt: req.body.bbt,
