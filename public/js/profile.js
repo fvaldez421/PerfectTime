@@ -2,12 +2,10 @@
 
 $(document).ready(function() {
 
-
-	console.log("Im loaded");
-
 	$("#submitButton").on("click", function(event) {
-		var googleId = $("#googleId").html()
+		event.preventDefault();
 
+		var googleId = $("#googleId").html()
 		var name = $("#q1").val().trim();
 		var age = $("#q2").val().trim();
 		var height = $("#q3").val().trim();
@@ -24,23 +22,12 @@ $(document).ready(function() {
 		    gender: gender,
 		    conception: conceive
 		};
-		
-		event.preventDefault();
-		console.log(info.nickName);
-		console.log("name here: " + name);
-		console.log("age: " + age);
-		console.log(height);
-		console.log(weight);
-		console.log(gender);
-
 
 		$.ajax({
 			method: "PUT",
 			url: "/api/profile", 
 			data: info
 		}).done(function(data){
-			console.log("shut up!")
-			console.log("im submitting");
 		});
 	});
 	
