@@ -47,7 +47,7 @@ var chartData = {
 		}]
 	};
 
-	var ctx = document.getElementById("cycle-chart");
+	var ctx = $("#cycle-chart");
 	var myChart = new Chart(ctx, {
 		type: "line",
 		data: chartData,
@@ -110,7 +110,8 @@ $(document).ready(function() {
 	var conceptMeth = $("#Q7").val().trim();
 	var meds = $("#Q8").val().trim();
 	var supplements = $("#Q9").val().trim();
-
+	console.log(bbt);
+	
 	var info = {
 	    date: date,
 	   	bbt: bbt,
