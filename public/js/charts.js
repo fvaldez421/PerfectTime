@@ -91,66 +91,72 @@ var chartData = {
 
 	});
 
-	var chartDataTwo = {
-		labels: [
-			"Mar 1", "Mar 2", "Mar 3", "Mar 4", "Mar 5", "Mar 6", "Mar 7", "Mar 8", "Mar 9", "Mar 10", "Mar 11", "Mar 12", "Mar 13", "Mar 14", "Mar 15", "Mar 16", "Mar 17", "Mar 18", "Mar 19", "Mar 20", "Mar 21", "Mar 22", "Mar 23", "Mar 24", "Mar 25", "Mar 26", "Mar 27", "Mar 28"
-		],
-		datasets: [{
-			type: "line",
-			label: "Spotting",
-			borderColor: "rgb(255, 49, 84)",
-            backgroundColor: "rgb(255, 49, 84)",
-            fill: false,
-            radius: 5,
-            pointStyle: "star",
-            display: false,
-            hoverRadius: 6,
-            data: [98.18, 97.79, 98.2, 98.34, 97.43, 97.66, 97.39, 
-            	   97.22, 97.69, 97.66, 97.76, 97.67, 97.79,97.64,
-            	   97.79, 98.18, 98.47, 98.61, 98.59, 98.7, 98.60,
-            	   98.51, 98.51, 98.61, 98.92, 98.08, 98.33, 98.48]
-		}, {
-			type: "line",
-			label: "Happiness",
-			borderColor: "rgb(182, 166, 232)",
-            backgroundColor: "rgb(182, 166, 232)",
-            borderDash: ([5,15]),
-            fill: false,
-            yAxisID: "happy-right-y",
-            data: [3, 4, 3, 5, 5, 6, 6, 5, 7, 8, 8, 8, 7, 8, 7, 8, 9, 10, 9, 8, 9, 9, 8, 7, 4, 5, 4, 3]
-		}, {
-			type: "line",
-			label: "Energy",
-			borderColor: "rgb(50, 159, 210)",
-			backgroundColor: "rgb(50, 159, 210)",
-            borderDash: ([3,6]),
-            fill: false,
-            yAxisID: "energy-right-y",
-            data: [2, 2, 3, 4, 7, 7, 8, 9, 7, 8, 10, 9, 8, 9, 7, 10, 8, 9, 9, 6, 5, 5, 4, 4, 3, 3, 3, 4]
-		}]
-	};
+	// var chartDataTwo = {
+	// 	labels: [
+	// 		"Mar 1", "Mar 2", "Mar 3", "Mar 4", "Mar 5", "Mar 6", "Mar 7", 
+	// 		"Mar 8", "Mar 9", "Mar 10", "Mar 11", "Mar 12", "Mar 13", "Mar 14", 
+	// 		"Mar 15", "Mar 16", "Mar 17", "Mar 18", "Mar 19", "Mar 20", "Mar 21", 
+	// 		"Mar 22", "Mar 23", "Mar 24", "Mar 25", "Mar 26", "Mar 27", "Mar 28"
+	// 	],
+	// 	datasets: [{
+	// 		type: "line",
+	// 		label: "Spotting",
+	// 		borderColor: "rgb(255, 49, 84)",
+ //            backgroundColor: "rgb(255, 49, 84)",
+ //            fill: false,
+ //            radius: 5,
+ //            pointStyle: "star",
+ //            display: false,
+ //            spanGaps: false,
+ //            showLine: false,
+ //            hoverRadius: 6,
+ //            data: ["Spotting", "Spotting", "Spotting"] 
 
-	var ctx = document.getElementById("symptoms-chart");
-	var myChart = new Chart(ctx, {
-		type: "line",
-		data: chartDataTwo,
-		options: {
-			responsive: true,
-			scales: {
-				yAxes: [{
-					id: "temp-left-y",
-					type: "linear",
-					position: "left",
-					ticks: {
-						min: 96.5,
-						max: 99.5,
-						autoSkip: false
-					}
-				}]
-			}
-		}
+ //            // 98.34, 97.43, 97.66, 97.39, 
+ //            // 	   97.22, 97.69, NaN, 97.76, 97.67, 97.79,97.64,
+ //            // 	   97.79, 98.18, 98.47, 98.61, 98.59, 98.7, 98.60,
+ //            // 	   98.51, 98.51, 98.61, 98.92, 98.08, 98.33, 98.48]
+	// 	}, {
+	// 		type: "line",
+	// 		label: "Cramping",
+	// 		borderColor: "rgb(182, 166, 232)",
+ //            backgroundColor: "rgb(182, 166, 232)",
+ //            borderDash: ([5,15]),
+ //            fill: false,
+ //            data: [NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, "Cramping", "Cramping", "Cramping"]
+	// 	}, {
+	// 		type: "line",
+	// 		label: "Nausea",
+	// 		borderColor: "rgb(50, 159, 210)",
+	// 		backgroundColor: "rgb(50, 159, 210)",
+ //            borderDash: ([3,6]),
+ //            fill: false,
+ //            data: [NaN, "Nausea", "Nausea", NaN, NaN, NaN, NaN, NaN, NaN, "Nausea", NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, "Nausea", "Nausea", "Nausea", NaN, NaN, NaN, NaN, NaN, NaN]
+	// 	}]
+	// };
 
-	});
+	// var ctx = document.getElementById("symptoms-chart");
+	// var myChart = new Chart(ctx, {
+	// 	type: "line",
+	// 	data: chartDataTwo,
+	// 	options: {
+	// 		responsive: true,
+	// 		scales: {
+	// 			xAxes:[{
+	// 				type: "category",
+	// 				labels: ["Mar 1", "Mar 2", "Mar 3", "Mar 4", "Mar 5", "Mar 6", "Mar 7", 
+	// 						"Mar 8", "Mar 9", "Mar 10", "Mar 11", "Mar 12", "Mar 13", "Mar 14", 
+	// 						"Mar 15", "Mar 16", "Mar 17", "Mar 18", "Mar 19", "Mar 20", "Mar 21", 
+	// 						"Mar 22", "Mar 23", "Mar 24", "Mar 25", "Mar 26", "Mar 27", "Mar 28"]
+	// 			}]
+	// 			yAxes: [{
+	// 				type: "category",
+	// 				labels: ["Spotting", "Cramping", "Tenderness", "No Appetite", "Nausea"]
+	// 			}]
+	// 		}
+	// 	}
+
+	// });
 
 
 
