@@ -11,7 +11,7 @@ module.exports = function(app) {
     if (req.user) {
       res.redirect("/members");
     }
-    res.sendFile(path.join(__dirname, "../public/login.html"));
+    res.render("login");
   });
 
   app.get("/login", function(req, res) {
@@ -19,21 +19,21 @@ module.exports = function(app) {
     if (req.user) {
       res.redirect("/members");
     }
-    res.sendFile(path.join(__dirname, "../public/signup.html"));
+    res.render("signup");
   });
 
   app.get("/charts", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/charts.html"));
+    res.render("charts");
   });
 
   app.get("/signup", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/signup.html"));
+    res.render("signup");
   });
 
   // Here we've add our isAuthenticated middleware to this route.
   // If a user who is not logged in tries to access this route they will be redirected to the signup page
   app.get("/members", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/members.html"));
+    res.render("members");
   });
 
   // Route for logging user out
@@ -44,9 +44,9 @@ module.exports = function(app) {
 
   app.get("/about", function(req, res) {
     if (req.user) {
-      res.sendFile(path.join(__dirname, "../public/about.html"));
+      res.render("about");
     }
-    res.sendFile(path.join(__dirname, "../public/login.html"));
+    res.render("login");
   });
 
 };
