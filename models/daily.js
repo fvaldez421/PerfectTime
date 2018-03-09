@@ -8,39 +8,39 @@ module.exports = function(sequelize, DataTypes) {
 		},
 		bbt: {
 			type: DataTypes.DECIMAL(6,3),
-			allowNull: false
+			allowNull: true
 		},
 		mood: {
 			type: DataTypes.INTEGER,
-			allowNull: false
+			allowNull: true
 		},
 		energy: {
 			type: DataTypes.INTEGER,
-			allowNull: false
+			allowNull: true
 		},
 		symptoms: {
 			type: DataTypes.STRING,
-			allowNull: false
+			allowNull: true
 		},
 		cervMuc: {
 			type: DataTypes.STRING,
-			allowNull: false
+			allowNull: true
 		},
 		intercourse: {
 			type: DataTypes.STRING,
-			allowNull: false
+			allowNull: true
 		},
 		conceptMeth: {
 			type: DataTypes.STRING,
-			allowNull: false
+			allowNull: true
 		},
 		meds: {
 			type: DataTypes.STRING,
-			allowNull: false
+			allowNull: true
 		},
 		supplements: {
 			type: DataTypes.STRING,
-			allowNull: false
+			allowNull: true
 		}
 	}, {
 		timestamps: false
