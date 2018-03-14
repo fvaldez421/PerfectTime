@@ -36,3 +36,16 @@ Perfect Time is a fertility tracking app. It allows one to keep track of mood, e
   https://www.npmjs.com/package/mysql2   
   https://www.npmjs.com/package/sequelize   
   
+**3) Set up files**
+
+  * Again, in the command line interface, write "git clone" followed by " https://github.com/fvaldez421/PerfectTime.git "  
+    to get access to the files necessary to explore Perfect Time.
+    
+  * Run "node server.js" to launch the program. 
+  
+  #### OR
+  
+  * Visit https://radiant-oasis-59014.herokuapp.com/  and enjoy the site live, online. 
+  
+  
+  
