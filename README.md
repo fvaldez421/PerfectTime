@@ -59,7 +59,9 @@ After signing in, users will be taken to their main calendar page. In the future
 
 ![Calendar and Events](https://github.com/fvaldez421/PerfectTime/blob/master/public/images/membersReadMe.png "Calendar and Event Member Page")  
 
+From the members page, one may navigate to the charts page. Here is where symptoms and cycle information inputs currently live. In addition, basal body temperature, mood and energy level throughout the current cycle are mapped on a chart to facilitate easily identification of sympto-cycle correlations.
 
+![Chart and Cycle Inputs](https://github.com/fvaldez421/PerfectTime/blob/master/public/images/charts.gif "Chart and Chart Input Page")   
   
-  
+Further exploration will take the user to the about page which has more information on the creators of the app.
   
