@@ -41,7 +41,9 @@ Perfect Time is a fertility tracking app. It allows one to keep track of mood, e
   * Again, in the command line interface, write "git clone" followed by " https://github.com/fvaldez421/PerfectTime.git "  
     to get access to the files necessary to explore Perfect Time.
     
-  * Run "node server.js" to launch the program. 
+  * Run "node server.js" to launch the program.  
+  
+  * Go to " localhost:3000 " in the computer's internet browser. 
   
   #### OR
   
