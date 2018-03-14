@@ -47,7 +47,13 @@ Perfect Time is a fertility tracking app. It allows one to keep track of mood, e
   
   #### OR
   
-  * Visit https://radiant-oasis-59014.herokuapp.com/  and enjoy the site live, online. 
+  * Visit https://radiant-oasis-59014.herokuapp.com/  and enjoy the site live, online.  
   
+### Program Walkthrough   
+  
+Upon launch, the user willl be greeted with the Perfect Time log-in page. Here the user can sign in with their google log-in by clicking on the red button.  
+
+![Log In with Google](https://github.com/fvaldez421/PerfectTime/blob/master/public/images/logInReadMe.png "Log in Greeting Page") . 
+  
   
   
