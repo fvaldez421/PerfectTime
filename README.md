@@ -39,7 +39,7 @@ Perfect Time is a fertility tracking app. It allows one to keep track of mood, e
 **3) Set up files**
 
   * Again, in the command line interface, write "git clone" followed by " https://github.com/fvaldez421/PerfectTime.git "  
-    to get access to the files necessary to explore Perfect Time.
+    to get access to the files necessary to explore Perfect Time.  
     
   * Run "node server.js" to launch the program.  
   
@@ -53,7 +53,13 @@ Perfect Time is a fertility tracking app. It allows one to keep track of mood, e
   
 Upon launch, the user willl be greeted with the Perfect Time log-in page. Here the user can sign in with their google log-in by clicking on the red button.  
 
-![Log In with Google](https://github.com/fvaldez421/PerfectTime/blob/master/public/images/logInReadMe.png "Log in Greeting Page") . 
+![Log In with Google](https://github.com/fvaldez421/PerfectTime/blob/master/public/images/logInReadMe.png "Log in Greeting Page")  
+
+After signing in, users will be taken to their main calendar page. In the future, this is where they will be able to see and edit all symptom inputs and create fertility related events to share with their partner.
+
+![Calendar and Events](https://github.com/fvaldez421/PerfectTime/blob/master/public/images/membersReadMe.png "Calendar and Event Member Page")  
+
+
   
   
   
